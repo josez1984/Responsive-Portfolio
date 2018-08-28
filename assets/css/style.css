@@ -1,0 +1,182 @@
+* {
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-seriff';
+    background-color: #dddddd;
+    background: #dddddd;
+    box-sizing: border-box;
+    text-align: left;
+    color: #777777;
+}
+html, body {
+    min-height: 100%;
+    margin: 0;
+    height: 100%;
+    background-image: url('../images/gravel/gravel.png');
+    flex-grow: 1;
+}
+.content {
+    position: relative;
+    padding: 0px 20px 20px 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: white;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    overflow: hidden;
+    flex: 1;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    flex-grow: 1;
+}
+#content-profile-image {
+    float: left;
+    height: 190px;
+    width: 190px;
+    margin: 20px;
+}
+#content-body {
+    background: white;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+p {
+    line-height: 1.7em;
+    padding: 20px;
+    background: white;
+}
+form {
+    background: white;
+    line-height: 1.7em;
+    font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-seriff';
+    width: 100%;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background: white;
+}
+input[type=submit] {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+label {
+    background: white;
+    font-weight: bolder;
+}
+textarea {
+    height: 200px;
+}
+.portfolio-image-div {
+    background: white;
+    float: left;
+    position: relative;
+    margin: 20px;
+}
+.portfolio-image-div a {
+    background-color: #4aaaa5;
+    color: white;
+}
+.portfolio-image-ribbon-text {
+    background: #4aaaa5;
+    padding-top: 20px;
+    text-align: center;
+    color: #dddddd;
+    font-size: large;
+}
+.portfolio-image {
+    height: 250px;
+    width: 250px;
+    background: white;
+    position: relative;
+}
+.portfolio-image-ribbon {
+    top: 65%;
+    z-index: 2;
+    background: #4aaaa5;
+    width: 100%;
+    height: 50px;
+    display:inline-block;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: larger;
+    padding-top: 15px;
+}
+.clear-both-div {
+    clear: both;
+}
+.navbar_object {
+    width: 100%;
+    height: 66px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+.coming-soon-section {
+    height: 300px;
+}
+@media only screen and (max-width: 980px) {
+    .content {
+        width: 75%;
+        margin-left: 40px;
+        margin-right: 25%;
+        float: left;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+        margin-left: 40px;
+        margin-right: 25%;
+        float: left;
+    }
+    #content-profile-image {
+        float: left;
+        height: 250px;
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    #content-profile-image {
+        float: none;
+        height: 80%;
+        width: 100%;
+        margin: 0;
+    }
+    .navbar_object {
+        height: 105px;
+        background-color: #4aaaa5 !important;
+        position: static;
+    }
+    .portfolio-image {
+        height: 100%;
+        width: 100%;
+        background: white;
+        position: relative;
+    }
+}
+@media only screen and (max-width: 250px) {
+    .navbar_object { height: 140px; }
+}

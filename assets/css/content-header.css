@@ -1,0 +1,10 @@
+#content-header {
+    text-align: left;
+    padding: 20px;
+    font-size: x-large;
+    font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+    color: #4aaaa5;
+    font-weight: bolder;
+    background: white;
+    border-bottom: 2px solid #666666;
+}
